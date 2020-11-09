@@ -12,17 +12,48 @@
 */
 
 Route::get('/', function () {
-    $name = request('name');
-   // return view('welcome');
-//});
-
-//Route::get('test', function () {
-    return view('test',  [
-        'name' => request('name')
-    ]);
+   // $name = request('name');
+    return view('welcome');
 });
 
-//Route::get('/welcome', function () {
-    //return view('welcome');
+Route::get('/contactus', function () {
+    // $name = request('name');
+     return view('contactus');
+ });
 
-Route::get('/posts/{post}', 'PostsController@show');
+ Route::get('/aboutus', function () {
+    // $name = request('name');
+     return view('aboutus');
+ });
+
+ Route::get('/moreinfo', function () {
+    // $name = request('name');
+     return view('moreinfo');
+ });
+
+ Route::get('/terms', function () {
+    // $name = request('name');
+     return view('terms');
+ });
+
+ Route::get('/events', function () {
+    // $name = request('name');
+     return view('events');
+ });
+
+ Route::get('/sponsor', function () {
+    // $name = request('name');
+     return view('sponsor');
+ });
+
+//Route::get('test', function () {
+//    return view('test',  [
+//        'name' => request('name')
+//    ]);
+
+
+//Route::get('/welcome', function () {
+ //   return view('welcome');
+
+//Route::get('/posts/{post}', 'PostsController@show');
+//});
